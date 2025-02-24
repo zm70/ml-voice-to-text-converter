@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice to Text Converter</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Voice to Text Converter</h1>
+    <a href="https://github.com/zm70" class="auther">Developed By Zohreh Moradi</a>
+    
+    <div class="row">
+      <!-- Speech Recognition Section -->
+      <div class="col-md-8">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="card-title mb-0">Converter</h4>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="languageSelector">Select Language:</label>
+              <select id="languageSelector" class="form-control">
+                <option value="en-US">English (US)</option>
+                <option value="es-ES">Español (Spain)</option>
+                <option value="fr-FR">Français (France)</option>
+                <option value="de-DE">Deutsch (Germany)</option>
+                <option value="fa-IR">فارسی (Persian)</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <button id="startRecognition" class="btn btn-primary">Start Recognition</button>
+              <button id="stopRecognition" class="btn btn-danger" disabled>Stop</button>
+              <button id="saveTranscript" class="btn btn-success">Save Transcript</button>
+            </div>
+            <div id="transcript" class="p-3 border bg-light">
+              Your transcribed text will appear here...
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saved Transcripts -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-header">
+            <h4 class="card-title mb-0">Saved Transcripts</h4>
+          </div>
+          <div class="card-body">
+            <ul id="savedTranscripts" class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-4">
+      <p class="mb-0">
+        Developed by <a href="https://github.com/zm70" class="author">Zohreh Moradi</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

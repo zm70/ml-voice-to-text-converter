@@ -1,0 +1,26 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  .rtl {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  #transcript {
+    min-height: 100px;
+  }
+  
+  #savedTranscripts {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .footer{
+    text-align: center;
+    margin-top: 10%;
+  }
+  .btn-default{
+    border: 1px solid #c2bbbb;
+  }
